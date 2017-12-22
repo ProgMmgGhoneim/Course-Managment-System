@@ -4,9 +4,9 @@
 Requirment:
 
 -Java 
--javafx
--scene bulider
--mysql
--html
--css
+-javafx 
+-scene bulider 
+-mysql 
+-html 
+-css 
 
