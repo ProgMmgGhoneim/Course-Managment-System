@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="644.0" stylesheets="@../style/admin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.AdminnController">
+   <children>
+      <TextField fx:id="fname" layoutX="27.0" layoutY="43.0" prefHeight="33.0" prefWidth="185.0" promptText="First Name" />
+      <TextField fx:id="sname" layoutX="225.0" layoutY="43.0" prefHeight="33.0" prefWidth="185.0" promptText="Scened Name" />
+      <TextField fx:id="lname" layoutX="432.0" layoutY="43.0" prefHeight="33.0" prefWidth="185.0" promptText="Last Name" />
+      <TextField fx:id="username" layoutX="27.0" layoutY="92.0" prefHeight="33.0" prefWidth="590.0" promptText="User Name" />
+      <PasswordField fx:id="password" layoutX="29.0" layoutY="138.0" prefHeight="33.0" prefWidth="590.0" promptText="Password" />
+      <PasswordField fx:id="repassword" layoutX="27.0" layoutY="184.0" prefHeight="33.0" prefWidth="590.0" promptText="Repassword" />
+      <TextField fx:id="mobileoremail" layoutX="29.0" layoutY="235.0" prefHeight="33.0" prefWidth="590.0" promptText="Mobile Or Email" />
+      <Button fx:id="add_bt" layoutX="278.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#ADD" prefHeight="33.0" prefWidth="103.0" text="Add" />
+      <Hyperlink fx:id="link" layoutX="256.0" layoutY="406.0" onMouseClicked="#Cancel" prefHeight="23.0" prefWidth="185.0" text="I Already Have an Account" />
+   </children>
+</AnchorPane>

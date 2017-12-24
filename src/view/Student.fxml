@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="580.0" prefWidth="795.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.StudentController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="221.0" prefWidth="748.0">
+         <children>
+            <TextField fx:id="ID" alignment="CENTER" layoutX="31.0" layoutY="22.0" prefHeight="25.0" prefWidth="585.0" promptText="ID" />
+            <TextField fx:id="FName" alignment="CENTER" layoutX="33.0" layoutY="63.0" prefHeight="25.0" prefWidth="181.0" promptText="First Name" />
+            <TextField fx:id="Sname" alignment="CENTER" layoutX="234.0" layoutY="63.0" prefHeight="25.0" prefWidth="181.0" promptText="Second Name" />
+            <TextField fx:id="Lname" alignment="CENTER" layoutX="435.0" layoutY="63.0" prefHeight="25.0" prefWidth="181.0" promptText="Last Name" />
+            <TextField fx:id="Mobile" alignment="CENTER" layoutX="31.0" layoutY="109.0" prefHeight="25.0" prefWidth="585.0" promptText="Mobile or Email" />
+            <TextField fx:id="Total_Pay" alignment="CENTER" layoutX="33.0" layoutY="185.0" prefHeight="25.0" prefWidth="287.0" promptText="Total pay" />
+            <TextField fx:id="Paai_mony" alignment="CENTER" layoutX="329.0" layoutY="185.0" prefHeight="25.0" prefWidth="287.0" promptText="Paid Mony" />
+            <ComboBox fx:id="course_combobox" layoutX="32.0" layoutY="147.0" onMouseClicked="#Comboboxvalue" prefHeight="26.0" prefWidth="585.0" promptText="courses" />
+            <Button fx:id="Add_bt" layoutX="653.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#ADD" prefHeight="26.0" prefWidth="87.0" text="Add" />
+            <Button fx:id="UPdate_bt" layoutX="653.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#Update" prefHeight="26.0" prefWidth="87.0" text="Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="234.0" prefHeight="317.0" prefWidth="748.0">
+         <children>
+            <TextField fx:id="Search_ID" alignment="CENTER" layoutX="33.0" layoutY="21.0" prefHeight="25.0" prefWidth="585.0" promptText="ID" />
+            <Button fx:id="search_bt" layoutX="649.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#Search" prefHeight="25.0" prefWidth="87.0" text="Search" />
+            <Button fx:id="delet_bt" layoutX="649.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#Delet" prefHeight="25.0" prefWidth="87.0" text="Delet" />
+            <TableView fx:id="tableview" layoutX="35.0" layoutY="62.0" prefHeight="254.0" prefWidth="577.0">
+              <columns>
+                <TableColumn fx:id="idtable" prefWidth="47.0" text="ID" />
+                <TableColumn fx:id="fnametable" prefWidth="97.0" text="First Name" />
+                  <TableColumn fx:id="snametable" prefWidth="109.0" text="Second Name" />
+                  <TableColumn fx:id="lnametable" prefWidth="76.0" text="Last Name" />
+                  <TableColumn fx:id="mobiletable" prefWidth="81.0" text="Mobile" />
+                  <TableColumn fx:id="paidtable" prefWidth="75.0" text="Paid Mony" />
+                  <TableColumn fx:id="coursetable" prefWidth="90.0" text="Course" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

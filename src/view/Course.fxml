@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.CourseController">
+   <children>
+      <AnchorPane layoutX="8.0" layoutY="14.0" prefHeight="185.0" prefWidth="756.0">
+         <children>
+            <TextField fx:id="cours_name" alignment="CENTER" layoutX="29.0" layoutY="17.0" prefHeight="25.0" prefWidth="590.0" promptText="Course_Name" />
+            <TextField fx:id="curse_price" alignment="CENTER" layoutX="29.0" layoutY="62.0" prefHeight="25.0" prefWidth="590.0" promptText="Course_Price" />
+            <TextField fx:id="course_hour" alignment="CENTER" layoutX="29.0" layoutY="105.0" prefHeight="25.0" prefWidth="590.0" promptText="Course_Hour" />
+            <ComboBox fx:id="DOC_COMBO" layoutX="29.0" layoutY="149.0" prefHeight="25.0" prefWidth="590.0" promptText="Doc_ID" />
+            <Button fx:id="Add_bt" layoutX="656.0" layoutY="30.0" mnemonicParsing="false" onMouseClicked="#ADD" prefHeight="25.0" prefWidth="91.0" text="Add " />
+            <Button fx:id="Update_bt" layoutX="656.0" layoutY="75.0" mnemonicParsing="false" onMouseClicked="#Update" prefHeight="25.0" prefWidth="91.0" text="Update" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="207.0" prefHeight="344.0" prefWidth="705.0">
+         <children>
+            <TextField fx:id="course_sea" alignment="CENTER" layoutX="20.0" layoutY="23.0" prefHeight="25.0" prefWidth="590.0" promptText="Course_name" />
+            <Button fx:id="delet_bt" layoutX="647.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#Delet" prefHeight="25.0" prefWidth="91.0" text="Delete" />
+            <TableView fx:id="tableview" layoutX="23.0" layoutY="72.0" prefHeight="261.0" prefWidth="590.0">
+              <columns>
+                <TableColumn fx:id="cnametable" prefWidth="134.0" text="Course Name" />
+                <TableColumn fx:id="cpricetable" prefWidth="142.0" text="Course Price" />
+                  <TableColumn fx:id="chourtable" prefWidth="151.0" text="Course Hour" />
+                  <TableColumn fx:id="doctable" prefWidth="162.0" text="Doc" />
+              </columns>
+            </TableView>
+            <Button fx:id="cousearch" layoutX="646.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="25.0" prefWidth="91.0" text="Search" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
